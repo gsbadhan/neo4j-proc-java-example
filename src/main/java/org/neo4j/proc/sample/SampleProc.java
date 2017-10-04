@@ -30,7 +30,7 @@ public class SampleProc {
 	 * @throws InterruptedException
 	 * @throws ExecutionException
 	 * 
-	 * @call procedure: call org.digi.lg.neo4j.udf.sample.search('guru');
+	 * @call procedure: call sample.search('guru');
 	 */
 	@Procedure("sample.search")
 	public Stream<ResultObj> search(@Name("name") String name) throws InterruptedException, ExecutionException {
@@ -53,7 +53,7 @@ public class SampleProc {
 	 * 
 	 * @return
 	 * 
-	 * @call procedure: call org.digi.lg.neo4j.udf.sample.stats;
+	 * @call procedure: call sample.stats;
 	 */
 	@Procedure("sample.stats")
 	public Stream<Stats> getStats() {

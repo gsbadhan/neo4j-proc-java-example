@@ -47,7 +47,7 @@ public class SampleProcTest {
 			session = driver.session();
 			Map<String, Object> params = new HashMap<>(1);
 			params.put("name", "gu");
-			StatementResult statementResult = session.run("CALL org.digi.lg.neo4j.udf.sample.search({name})", params);
+			StatementResult statementResult = session.run("CALL sample.search({name})", params);
 			List<Record> results = statementResult.list();
 			assertNotNull(results);
 		} catch (Exception e) {
@@ -62,7 +62,7 @@ public class SampleProcTest {
 		Session session = null;
 		try {
 			session = driver.session();
-			StatementResult statementResult = session.run("CALL org.digi.lg.neo4j.udf.sample.stats");
+			StatementResult statementResult = session.run("CALL sample.stats");
 			List<Record> results = statementResult.list();
 			assertNotNull(results);
 			assertTrue(results.size() != 0);

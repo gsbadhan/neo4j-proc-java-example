@@ -48,7 +48,7 @@ public class SampleProcTestIT {
 			session = driver.session();
 			Map<String, Object> params = new HashMap<>(1);
 			params.put("name", "gurpreet");
-			StatementResult statementResult = session.run("CALL org.digi.lg.neo4j.udf.sample.search({name})", params);
+			StatementResult statementResult = session.run("CALL sample.search({name})", params);
 			List<Record> results = statementResult.list();
 			assertNotNull(results);
 			assertTrue(results.size() != 0);
@@ -64,7 +64,7 @@ public class SampleProcTestIT {
 		Session session = null;
 		try {
 			session = driver.session();
-			StatementResult statementResult = session.run("CALL org.digi.lg.neo4j.udf.sample.stats");
+			StatementResult statementResult = session.run("CALL sample.stats");
 			List<Record> results = statementResult.list();
 			assertNotNull(results);
 			assertTrue(results.size() != 0);

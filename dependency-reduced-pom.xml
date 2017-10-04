@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>digi.lg.service</groupId>
-  <artifactId>lg-neo4j-udf</artifactId>
-  <name>lg-neo4j-udf</name>
-  <version>0.3.0</version>
+  <groupId>com.neo4j</groupId>
+  <artifactId>neo4j-procedure-example</artifactId>
+  <name>neo4j-procedure-example</name>
+  <version>0.1.0</version>
   <description>A project for building a Neo4j Procedure,functions</description>
   <build>
     <plugins>

@@ -12,7 +12,7 @@ http://localhost:7474/
  
 ## How deploy PROC jar:
 	1. run : mvn clean install
-	2. copy "lg-neo4j-udef.jar" from /target folder. And paste to Neo4j's ~/plugins/ folder.
+	2. copy "neo4j-procedure-example-0.1.0.jar" from /target folder. And paste to Neo4j's ~/plugins/ folder.
 Note: Stop Neo4j server before deploying PROC.
 
 ## neo4j.propperties changes:
