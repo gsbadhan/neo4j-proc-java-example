@@ -1,5 +1,5 @@
 
-package org.neo4j.sample;
+package org.neo4j.proc.sample;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -32,7 +32,7 @@ public class SampleProc {
 	 * 
 	 * @call procedure: call org.digi.lg.neo4j.udf.sample.search('guru');
 	 */
-	@Procedure("org.digi.lg.neo4j.udf.sample.search")
+	@Procedure("sample.search")
 	public Stream<ResultObj> search(@Name("name") String name) throws InterruptedException, ExecutionException {
 		log.info("Search request has come for input: " + name);
 		Map<String, Object> param = new HashMap<>(1);
@@ -55,7 +55,7 @@ public class SampleProc {
 	 * 
 	 * @call procedure: call org.digi.lg.neo4j.udf.sample.stats;
 	 */
-	@Procedure("org.digi.lg.neo4j.udf.sample.stats")
+	@Procedure("sample.stats")
 	public Stream<Stats> getStats() {
 		log.info("calling stats");
 		List<Stats> outList = new ArrayList<Stats>();

@@ -1,5 +1,5 @@
 
-package com.neo4j.convert;
+package com.neo4j.proc.convert;
 
 import static org.junit.Assert.assertNotNull;
 

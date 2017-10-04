@@ -1,5 +1,5 @@
 
-package org.neo4j.sample;
+package org.neo4j.proc.sample;
 
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;

@@ -1,5 +1,5 @@
 
-package org.neo4j.sample;
+package org.neo4j.proc.sample;
 
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
@@ -19,7 +19,7 @@ import org.neo4j.driver.v1.Record;
 import org.neo4j.driver.v1.Session;
 import org.neo4j.driver.v1.StatementResult;
 import org.neo4j.harness.junit.Neo4jRule;
-import org.neo4j.sample.SampleProc;
+import org.neo4j.proc.sample.SampleProc;
 
 public class SampleProcTest {
 

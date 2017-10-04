@@ -1,5 +1,5 @@
 
-package com.neo4j.convert;
+package com.neo4j.proc.convert;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -27,7 +27,7 @@ public class ConvertProcedures {
 	public GraphDatabaseAPI graph;
 
 	@SuppressWarnings("unchecked")
-	@Procedure("org.digi.lg.convert.toTree")
+	@Procedure("convert.toTree")
 	@Description("convert paths to Tree")
 	public Stream<MapResult> convertToTree(@Name("paths") List<Path> paths) {
 		Map<Long, Map<String, Object>> maps = new HashMap<>(paths.size() * 100);
