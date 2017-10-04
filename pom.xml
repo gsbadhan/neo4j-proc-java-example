@@ -3,11 +3,11 @@
                       http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.neo4j</groupId>
-	<artifactId>neo4j-proc-java-example</artifactId>
+	<artifactId>neo4j-procedure-example</artifactId>
 	<version>0.1.0</version>
 
 	<packaging>jar</packaging>
-	<name>neo4j-proc-java-example</name>
+	<name>neo4j-procedure-example</name>
 	<description>A project for building a Neo4j Procedure,functions</description>
 
 	<properties>
